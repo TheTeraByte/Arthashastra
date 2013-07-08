@@ -1,0 +1,169 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/part1N_root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wallpaper1"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".Novice_Activity" >
+
+    <Button
+        android:id="@+id/accrual_cash_accounting"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cash_accounting"
+        android:layout_marginTop="65dp"
+        android:drawableBottom="@drawable/vidicon"
+        android:text="@string/accrual_cash"
+        android:textColor="#0A2A0A"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/cash_accounting"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/accrual_cash_accounting"
+        android:layout_marginRight="45dp"
+        android:layout_marginTop="45dp"
+        android:drawableBottom="@drawable/vidicon"
+        android:text="@string/cash_acc"
+        android:textColor="#0A2A0A"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/comparing_2_types_acc"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/cash_accounting"
+        android:layout_alignBottom="@+id/cash_accounting"
+        android:layout_centerHorizontal="true"
+        android:text="@string/comparing_2_acc"
+        android:drawableBottom="@drawable/vidicon"
+        android:textColor="#0A2A0A"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/bal_sheet_income_statement"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/accrual_cash_accounting"
+        android:layout_alignBottom="@+id/accrual_cash_accounting"
+        android:layout_centerHorizontal="true"
+        android:drawableBottom="@drawable/vidicon"
+        android:text="@string/bal_sheet_income_text"
+        android:textColor="#0A2A0A"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/more_info_abt_cash_acc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/cash_accounting"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="48dp"
+        android:text=""
+         />
+
+    <TextView
+        android:id="@+id/more_info_abt_accrual_accounting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/accrual_cash_accounting"
+        android:layout_below="@+id/accrual_cash_accounting"
+        android:layout_marginTop="23dp"
+        android:text="@string/more_info_abt_accrual_acc"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/more_info_about_cash_acc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/more_info_abt_accrual_accounting"
+        android:layout_below="@+id/cash_accounting"
+        android:text="@string/more_info_about_cash_acc"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/more_info_about_comparison_of_cash_acc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/more_info_about_cash_acc"
+        android:layout_alignBottom="@+id/more_info_about_cash_acc"
+        android:layout_centerHorizontal="true"
+        android:text="@string/more_info_abt_cash_vs_accrual"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" 
+         />
+
+    <TextView
+        android:id="@+id/more_info_about_bal_sheet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/more_info_abt_accrual_accounting"
+        android:layout_alignBottom="@+id/more_info_abt_accrual_accounting"
+        android:layout_alignLeft="@+id/more_info_about_comparison_of_cash_acc"
+        android:text="@string/more_info_about_bal_sheet_text"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/more_info_about_basic_cash_flow_st"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/basic_cash_flow_st"
+        android:layout_below="@+id/basic_cash_flow_st"
+        android:text="@string/more_info_about_basic_cash_flow"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/more_info_about_intro_to_accounts_payable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/more_info_about_bal_sheet"
+        android:layout_alignBottom="@+id/more_info_about_bal_sheet"
+        android:layout_alignLeft="@+id/more_info_about_basic_cash_flow_st"
+        android:text="@string/more_info_about_intro_to_accounts_payable" 
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        />
+
+    <Button
+        android:id="@+id/account_payable"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/bal_sheet_income_statement"
+        android:layout_alignBottom="@+id/bal_sheet_income_statement"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="74dp"
+        android:drawableBottom="@drawable/vidicon"
+        android:text="@string/acc_payable"
+        android:textColor="#0A2A0A"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/basic_cash_flow_st"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/comparing_2_types_acc"
+        android:layout_alignBottom="@+id/comparing_2_types_acc"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="34dp"
+        android:drawableBottom="@drawable/vidicon"
+        android:text="@string/basic_cash_flow"
+        android:textColor="#0A2A0A"
+        android:textSize="20sp" />
+    
+     </RelativeLayout>

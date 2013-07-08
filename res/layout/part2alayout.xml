@@ -1,0 +1,164 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/part2a_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wallpaper1"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".Beginner_Activity" >
+
+    <Button
+        android:id="@+id/intro_mutual_fund"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/oem_redemption"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="34dp"
+        android:layout_marginTop="55dp"
+        android:drawableBottom="@drawable/vidicon"
+        android:text="@string/intro_mutual_fund_txt"
+        android:textColor="#0A2A0A"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/oem_redemption"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/intro_mutual_fund"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="60dp"
+        android:drawableBottom="@drawable/vidicon"
+        android:text="@string/oem_redemption_txt"
+        android:textColor="#0A2A0A"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/closed_mutual_fund"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/intro_mutual_fund"
+        android:layout_alignBottom="@+id/intro_mutual_fund"
+        android:layout_centerHorizontal="true"
+        android:drawableBottom="@drawable/vidicon"
+        android:text="@string/closed_mut_fund"
+        android:textColor="#0A2A0A"
+        android:textSize="20sp" 
+         />
+
+    <Button
+        android:id="@+id/etfs"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/oem_redemption"
+        android:layout_alignBottom="@+id/oem_redemption"
+        android:layout_centerHorizontal="true"
+        android:drawableBottom="@drawable/vidicon"
+        android:text="@string/etfs_text" 
+        android:textColor="#0A2A0A"
+        android:textSize="20sp"
+        />
+
+    <Button
+        android:id="@+id/challenge_2"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/closed_mutual_fund"
+        android:layout_alignBottom="@+id/closed_mutual_fund"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="149dp"
+        android:drawableBottom="@drawable/star"
+        android:text="@string/challenge_2"
+        android:textColor="#0A2A0A"
+        android:textSize="20sp"
+         />
+
+    <Button
+        android:id="@+id/way_forward"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/etfs"
+        android:layout_alignBottom="@+id/etfs"
+        android:layout_marginLeft="99dp"
+        android:layout_toRightOf="@+id/closed_mutual_fund"
+        android:drawableBottom="@drawable/docpdf"
+        android:text="@string/way_forward"
+        android:textColor="#0A2A0A"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/more_info_about_open_ended_mutual_funds"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/oem_redemption"
+        android:layout_below="@+id/intro_mutual_fund"
+        android:text="@string/more_info_abt_open_ended_mut_f"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/more_info_about_open_end_mut_fun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/intro_mutual_fund"
+        android:layout_below="@+id/oem_redemption"
+        android:text="@string/more_info_abt_open_end_mut_fun"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/more_info_about_closed_end_mutual_fund"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/more_info_about_open_ended_mutual_funds"
+        android:layout_alignBottom="@+id/more_info_about_open_ended_mutual_funds"
+        android:layout_centerHorizontal="true"
+        android:text="@string/more_info_abt_closed_end_mutual_fund" 
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" 
+        />
+
+    <TextView
+        android:id="@+id/more_info_about_etf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/more_info_about_open_end_mut_fun"
+        android:layout_alignBottom="@+id/more_info_about_open_end_mut_fun"
+        android:layout_centerHorizontal="true"
+        android:text="@string/more_info_abt_etf"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" 
+         />
+
+    <TextView
+        android:id="@+id/more_info_about_challenge_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/more_info_about_closed_end_mutual_fund"
+        android:layout_alignBottom="@+id/more_info_about_closed_end_mutual_fund"
+        android:layout_alignRight="@+id/way_forward"
+        android:text="@string/more_info_about_challenge_2"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/more_info_about_way_forward"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/more_info_about_etf"
+        android:layout_alignBottom="@+id/more_info_about_etf"
+        android:layout_alignLeft="@+id/more_info_about_challenge_2"
+        android:text="@string/more_info_abt_way_forward"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+    
+    </RelativeLayout>

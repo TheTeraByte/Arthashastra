@@ -1,0 +1,163 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/part1a_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wallpaper1"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".Beginner_Activity" >
+
+    <Button
+        android:id="@+id/intro_inflation"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="83dp"
+        android:layout_marginTop="51dp"
+        android:drawableBottom="@drawable/vidicon"
+        android:text="@string/intro_inflation"
+        android:textColor="#0A2A0A"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/what_is_inflation"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/intro_inflation"
+        android:layout_marginBottom="58dp"
+        android:drawableBottom="@drawable/vidicon"
+        android:text="@string/what_inflation_text"
+        android:textColor="#0A2A0A"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/inflation_data"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/intro_inflation"
+        android:layout_alignBottom="@+id/intro_inflation"
+        android:layout_centerHorizontal="true"
+        android:drawableBottom="@drawable/vidicon"
+        android:text="@string/inflat_data" 
+        android:textColor="#0A2A0A"
+        android:textSize="20sp"
+        />
+
+    <Button
+        android:id="@+id/cpi_index"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/what_is_inflation"
+        android:layout_alignBottom="@+id/what_is_inflation"
+        android:layout_centerHorizontal="true"
+        android:drawableBottom="@drawable/vidicon"
+        android:text="@string/cpi_index_text" 
+        android:textColor="#0A2A0A"
+        android:textSize="20sp"
+        />
+
+    <Button
+        android:id="@+id/intro_stocks"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/inflation_data"
+        android:layout_alignBottom="@+id/inflation_data"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="74dp"
+        android:drawableBottom="@drawable/vidicon"
+        android:text="@string/intro_stocks_text"
+        android:textColor="#0A2A0A"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/bonds_vs_stocks"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/cpi_index"
+        android:layout_alignBottom="@+id/cpi_index"
+        android:layout_alignLeft="@+id/intro_stocks"
+        android:layout_marginLeft="45dp"
+        android:drawableBottom="@drawable/vidicon"
+        android:text="@string/bonds_vs_stocks_text"
+         android:textColor="#0A2A0A"
+        android:textSize="20sp"  />
+
+    <TextView
+        android:id="@+id/more_info_about_inflation_overview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/intro_inflation"
+        android:layout_marginLeft="47dp"
+        android:text="@string/more_info_abt_inflation_overview"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/more_info_what_is_inflation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/more_info_about_inflation_overview"
+        android:layout_below="@+id/cpi_index"
+        android:text="@string/more_info_what_is_infl_text"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/more_info_about_infl_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/more_info_about_inflation_overview"
+        android:layout_alignBottom="@+id/more_info_about_inflation_overview"
+        android:layout_centerHorizontal="true"
+        android:text="@string/more_info_abt_infl_data" 
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        />
+
+    <TextView
+        android:id="@+id/more_info_about_cpi_index"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/more_info_what_is_inflation"
+        android:layout_alignBottom="@+id/more_info_what_is_inflation"
+        android:layout_centerHorizontal="true"
+        android:text="@string/more_info_abt_cpi_index" 
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        />
+
+    <TextView
+        android:id="@+id/more_info_abt_buy_company_stock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/more_info_about_infl_data"
+        android:layout_alignBottom="@+id/more_info_about_infl_data"
+        android:layout_alignLeft="@+id/intro_stocks"
+        android:text="@string/more_info_buy_company_stock_txt"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/more_info_about_bonds_vs_stock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/more_info_about_cpi_index"
+        android:layout_alignBottom="@+id/more_info_about_cpi_index"
+        android:layout_alignLeft="@+id/bonds_vs_stocks"
+        android:text="@string/more_info_abt_bonds_vs_stock"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+    
+        </RelativeLayout>

@@ -1,0 +1,24 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/score_the_word"
+        
+        android:title="@string/score_text"
+        android:showAsAction="always"
+        />
+    
+    <item
+        android:id="@+id/about_the_app"
+        android:title="@string/about"
+        android:showAsAction="never"
+       
+    />
+    
+    <item 
+        android:id="@+id/help_for_app"
+        android:title="@string/help"
+        android:showAsAction="never"
+        
+        />
+    
+</menu>

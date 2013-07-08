@@ -1,0 +1,165 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/part2b_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wallpaper1"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".Beginner_Activity" >
+
+    <Button
+        android:id="@+id/time_value_money"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="53dp"
+        android:layout_marginTop="35dp"
+        android:drawableBottom="@drawable/vidicon"
+        android:text="@string/time_value_money_text"
+        android:textColor="#0A2A0A"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/intro_present_value"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/time_value_money"
+        android:layout_below="@+id/time_value_money"
+        android:layout_marginTop="74dp"
+        android:drawableBottom="@drawable/vidicon"
+        android:text="@string/intro_pres_val"
+        android:textColor="#0A2A0A"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/present_value_2"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/time_value_money"
+        android:layout_alignBottom="@+id/time_value_money"
+        android:layout_centerHorizontal="true"
+        android:drawableBottom="@drawable/vidicon"
+        android:text="@string/pres_value_2" 
+        android:textColor="#0A2A0A"
+        android:textSize="20sp" 
+        />
+
+    <Button
+        android:id="@+id/present_value_3"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/intro_present_value"
+        android:layout_alignBottom="@+id/intro_present_value"
+        android:layout_centerHorizontal="true"
+        android:text="@string/pres_value_3"
+        android:drawableBottom="@drawable/vidicon"
+        android:textColor="#0A2A0A"
+        android:textSize="20sp" 
+         />
+
+    <Button
+        android:id="@+id/pres_value_4"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/present_value_2"
+        android:layout_alignBottom="@+id/present_value_2"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="116dp"
+        android:drawableBottom="@drawable/vidicon"
+        android:text="@string/pres_val_4"
+        android:textColor="#0A2A0A"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/lessons_money_kids"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/present_value_3"
+        android:layout_alignBottom="@+id/present_value_3"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="36dp"
+        android:drawableBottom="@drawable/docpdf"
+        android:text="@string/lessons_money_kid"
+        android:textColor="#0A2A0A"
+        android:textSize="20sp" 
+         />
+
+    <TextView
+        android:id="@+id/more_info_about_time_val_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/time_value_money"
+        android:layout_marginLeft="28dp"
+        android:text="@string/more_info_abt_time_val_money"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/more_info_about_intro_pres_val"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/more_info_about_time_val_money"
+        android:layout_below="@+id/intro_present_value"
+        android:text="@string/more_info_abt_intro_pres_val"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/more_info_about_val_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/more_info_about_time_val_money"
+        android:layout_alignBottom="@+id/more_info_about_time_val_money"
+        android:layout_centerHorizontal="true"
+        android:text="@string/more_info_abt_val_2" 
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" 
+        />
+
+    <TextView
+        android:id="@+id/more_info_about_pres_val_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/more_info_about_intro_pres_val"
+        android:layout_alignBottom="@+id/more_info_about_intro_pres_val"
+        android:layout_centerHorizontal="true"
+        android:text="@string/more_info_abt_pres_val_3" 
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" 
+        />
+
+    <TextView
+        android:id="@+id/more_info_about_pres_val_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/more_info_about_val_2"
+        android:layout_alignBottom="@+id/more_info_about_val_2"
+        android:layout_alignRight="@+id/lessons_money_kids"
+        android:layout_marginRight="33dp"
+        android:text="@string/more_info_abt_pres_val_4"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/more_info_about_10_money_lessons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/more_info_about_pres_val_3"
+        android:layout_alignBottom="@+id/more_info_about_pres_val_3"
+        android:layout_alignLeft="@+id/lessons_money_kids"
+        android:text="@string/more_info_abt_10_money_lessons"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+        </RelativeLayout>

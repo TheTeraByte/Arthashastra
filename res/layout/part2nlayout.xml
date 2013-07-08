@@ -1,0 +1,162 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/part1N_root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wallpaper1"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".Novice_Activity" >
+
+    <Button
+        android:id="@+id/fair_value_accounting"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="45dp"
+        android:drawableBottom="@drawable/vidicon"
+        android:text="@string/fair_value_acc"
+        android:textColor="#0A2A0A"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/intro_depreciation"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/fair_value_accounting"
+        android:layout_below="@+id/fair_value_accounting"
+        android:layout_marginRight="38dp"
+        android:layout_marginTop="61dp"
+        android:drawableBottom="@drawable/vidicon"
+        android:text="@string/intro_depreciation_text"
+        android:textColor="#0A2A0A"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/depreciating_the_truck"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/fair_value_accounting"
+        android:layout_alignBottom="@+id/fair_value_accounting"
+        android:layout_centerHorizontal="true"
+        android:drawableBottom="@drawable/vidicon"
+        android:text="@string/dep_truck" 
+        android:textColor="#0A2A0A"
+        android:textSize="20sp"
+        />
+
+    <Button
+        android:id="@+id/depreciation_in_cash_flow"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/intro_depreciation"
+        android:layout_alignBottom="@+id/intro_depreciation"
+        android:layout_centerHorizontal="true"
+        android:drawableBottom="@drawable/vidicon"
+        android:text="@string/dep_cash_flow" 
+        android:textColor="#0A2A0A"
+        android:textSize="20sp"/>
+
+    <Button
+        android:id="@+id/amortization_and_depreciation"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/depreciating_the_truck"
+        android:layout_alignBottom="@+id/depreciating_the_truck"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"
+        android:drawableBottom="@drawable/vidicon"
+        android:text="@string/amor_and_depreciation"
+        android:textColor="#0A2A0A"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/one_page_button"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/depreciation_in_cash_flow"
+        android:layout_alignBottom="@+id/depreciation_in_cash_flow"
+        android:layout_alignRight="@+id/amortization_and_depreciation"
+        android:layout_marginRight="80dp"
+        android:drawableBottom="@drawable/docpdf"
+        android:text="@string/one_page_text"
+        android:textColor="#0A2A0A"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/more_about_dep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/intro_depreciation"
+        android:layout_marginLeft="48dp"
+        android:text="@string/more_about_depreciation"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/more_info_about_fair_value_acc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/more_about_dep"
+        android:layout_below="@+id/fair_value_accounting"
+        android:text="@string/more_info_abt_fair_value_acc"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/more_info_abt_dep_truck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/more_info_about_fair_value_acc"
+        android:layout_alignBottom="@+id/more_info_about_fair_value_acc"
+        android:layout_centerHorizontal="true"
+        android:text="@string/more_info_about_dep_truck" 
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        />
+
+    <TextView
+        android:id="@+id/more_info_about_dep_cash_flow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/more_about_dep"
+        android:layout_alignBottom="@+id/more_about_dep"
+        android:layout_alignLeft="@+id/more_info_abt_dep_truck"
+        android:text="@string/more_info_abt_dep_cash_flow"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/more_info_about_one_page"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/more_info_about_dep_cash_flow"
+        android:layout_alignBottom="@+id/more_info_about_dep_cash_flow"
+        android:layout_alignParentRight="true"
+        android:text="@string/more_info_abt_one_page"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/more_info_abt_amortization_dep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/more_info_abt_dep_truck"
+        android:layout_alignBottom="@+id/more_info_abt_dep_truck"
+        android:layout_alignLeft="@+id/more_info_about_one_page"
+        android:text="@string/more_info_abt_amortization_and_depreciation"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+    
+     </RelativeLayout>

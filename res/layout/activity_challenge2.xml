@@ -1,0 +1,96 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/challenge2_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wallpaper1"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".Challenge2_Activity" >
+
+     <ImageView
+        android:id="@+id/quest_mark_challenge2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="54dp"
+        android:src="@drawable/questionmark" />
+     
+     
+      <RadioGroup
+        android:id="@+id/option_frame_challenge2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/quest_mark_challenge2"
+        android:layout_marginLeft="68dp"
+        android:layout_marginTop="57dp" >
+
+        <RadioButton
+            android:id="@+id/opt1_challenge2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            
+             />
+
+        <RadioButton
+            android:id="@+id/opt2_challenge2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+             />
+
+        <RadioButton
+            android:id="@+id/opt3_challenge2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp" 
+            
+            />
+        
+       
+        <RadioButton 
+           android:id="@+id/opt4_challenge2"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textColor="#FFFFFF"
+           android:textSize="30sp"  
+            
+            />
+       
+        
+    </RadioGroup>
+    
+      <TextView
+        android:id="@+id/quest_frame_challenge2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/option_frame_challenge2"
+        android:layout_marginTop="42dp"
+        android:textColor="#FFFFFF"
+        android:textSize="40sp"
+       
+       />
+     
+     <Button
+        android:id="@+id/sub_button_challenge2"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/quest_mark_challenge2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:text="@string/sub_button_text"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp" />
+    
+    </RelativeLayout>

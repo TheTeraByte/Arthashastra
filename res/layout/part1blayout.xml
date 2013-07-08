@@ -1,0 +1,163 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/part1b_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wallpaper1"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".Beginner_Activity" >
+
+    <TextView
+        android:id="@+id/more_about_tortoise_buffet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tortoise_buffet"
+        android:layout_marginLeft="19dp"
+        android:layout_marginTop="26dp"
+        android:text="@string/more_about_tortoise_buffet"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+         />
+
+    <Button
+        android:id="@+id/tortoise_buffet"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/more_about_tortoise_buffet"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="79dp"
+        android:layout_marginTop="19dp"
+        android:drawableBottom="@drawable/docpdf"
+        android:text="@string/tortoise_buffets"
+        android:textColor="#0A2A0A"
+        android:textSize="20sp"
+        android:onClick="view_PDF"
+         />
+
+    <TextView
+        android:id="@+id/intro_interest_more_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/interest_vid"
+        android:layout_below="@+id/interest_vid"
+        android:text="@string/intro_int_more_info"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/interest_part_2"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/more_about_tortoise_buffet"
+        android:layout_alignLeft="@+id/more_info_abt_int_2"
+        android:drawableBottom="@drawable/vidicon"
+        android:text="@string/int_part_2"
+        android:textColor="#0A2A0A"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/rule_of_72"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/more_info_about_72"
+        android:layout_alignLeft="@+id/more_info_abt_int_2"
+        android:drawableBottom="@drawable/vidicon"
+        android:text="@string/rule_72"
+        android:textColor="#0A2A0A"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/more_info_about_72"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/interest_vid"
+        android:layout_marginLeft="46dp"
+        android:layout_toRightOf="@+id/interest_vid"
+        android:text="@string/more_info_72"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/one_idiot_more_info_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/interest_vid"
+        android:layout_alignParentRight="true"
+        android:text="@string/one_id_more_info"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/one_idiot"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/interest_part_2"
+        android:layout_alignBottom="@+id/interest_part_2"
+        android:layout_marginLeft="62dp"
+        android:layout_toRightOf="@+id/more_info_about_72"
+        android:drawableBottom="@drawable/vidicon"
+        android:text="@string/one_id"
+        android:textColor="#0A2A0A"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/cheapskate"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/rule_of_72"
+        android:layout_alignBottom="@+id/rule_of_72"
+        android:layout_marginLeft="16dp"
+        android:layout_toRightOf="@+id/more_info_about_72"
+        android:text="@string/frugal_guide"
+        android:textColor="#0A2A0A"
+        android:textSize="20sp" 
+        android:drawableBottom="@drawable/docpdf"
+        />
+
+    <TextView
+        android:id="@+id/frugal_leo_more_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/more_info_about_72"
+        android:layout_alignBottom="@+id/more_info_about_72"
+        android:layout_alignLeft="@+id/cheapskate"
+        android:layout_marginLeft="22dp"
+        android:text="@string/frugal_guide_more_info"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/more_info_abt_int_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/more_about_tortoise_buffet"
+        android:layout_alignBottom="@+id/more_about_tortoise_buffet"
+        android:layout_alignLeft="@+id/more_info_about_72"
+        android:text="@string/more_info_abt_int2"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/interest_vid"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/more_about_tortoise_buffet"
+        android:layout_below="@+id/more_about_tortoise_buffet"
+        android:layout_marginRight="56dp"
+        android:layout_marginTop="18dp"
+        android:drawableBottom="@drawable/vidicon"
+        android:text="@string/intro_int"
+        android:textColor="#0A2A0A"
+        android:textSize="20sp" />
+    
+    </RelativeLayout>
